@@ -1,7 +1,7 @@
 {
   "name": "react-extract-image-diff",
   "version": "0.0.1",
-  "description": "",
+  "description": "A React component for extracting image diff",
   "main": "index.js",
   "scripts": {
     "build": "babel src/index.tsx -o dist/index.js",
@@ -13,8 +13,23 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sottar/react-extract-image-diff.git"
+  },
+  "keywords": [
+    "react",
+    "images",
+    "extract",
+    "diff",
+    "difference"
+  ],
   "author": "sottar <ohrst.18@gmail.com>",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sottar/react-extract-image-diff/issues"
+  },
+  "homepage": "https://github.com/sottar/react-extract-image-diff#readme",
+  "license": "MIT",
   "peerDependencies": {
     "react": "^16.0.0"
   },
