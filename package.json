@@ -1,0 +1,58 @@
+{
+  "name": "react-extract-image-diff",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/index.tsx -o dist/index.js",
+    "start": "webpack-dev-server --mode=development",
+    "lint": "run-p -l lint:*",
+    "lint:es": "eslint . --ext=ts,tsx",
+    "lint:prettier": "prettier --check \"**/*.{js,ts,tsx}\"",
+    "lint:style": "stylelint '**/*.ts{,x}' -s css-in-js",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sottar <ohrst.18@gmail.com>",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "@types/node": "^14.6.4",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/styled-components": "^5.1.3",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1",
+    "stylelint": "^13.7.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
